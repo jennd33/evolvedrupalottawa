@@ -1,0 +1,17 @@
+helloworld.hello:
+  path: '/hello'
+  defaults:
+    _title: 'Hello World'
+    _controller: '\Drupal\helloworld\Controller\HelloworldController::build'
+  requirements:
+    _permission: 'access content'
+
+
+hello_world.hello.person:
+  path: '/hello/{name}'
+  defaults:
+    _title: 'Hello person'
+    _controller: '\Drupal\helloworld\Controller\HelloworldController::build'
+  requirements:
+    _permission: 'access content'
+    
